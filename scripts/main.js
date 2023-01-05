@@ -1,3 +1,4 @@
+/*
 const myImage = document.querySelector("img");
 
 myImage.onclick = () => {
@@ -8,17 +9,17 @@ myImage.onclick = () => {
     myImage.setAttribute("src", "images/clothes.webp");
   }
 };
-
+*/
 let myButton = document.querySelector("button");
 let myHeading = document.querySelector("h1");
 
 function setUserName() {
-  const myName = prompt("Please enter your name.");
+  const myName = prompt("Ponga su nombre.");
   if (!myName) {
     setUserName();
   } else {
     localStorage.setItem("name", myName);
-    myHeading.textContent = `Bienvenido, ${myName}`;
+    myHeading.textContent = `${myName} sos un animal`;
   }
 }
 
